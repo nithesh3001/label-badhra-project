@@ -1,0 +1,67 @@
+/* Latest Collections Section Styles */
+.latest-collections {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .carousel-container {
+    flex: 1;
+    max-width: 50%;
+    max-height: 100%;
+    margin-right: 20px;
+  }
+  
+  .text-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .text-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .collection-item {
+    margin-bottom: 20px;
+  }
+  
+  .collection-item h2 {
+    font-size: 24px;
+    color: #714384;
+    margin-bottom: 10px;
+  }
+  
+  .collection-item h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .collection-item p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .latest-collections {
+      flex-direction: column;
+    }
+  
+    .carousel-container,
+    .text-content {
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    .text-content{
+        text-align: center;
+    }
+    .text-content {
+      padding: 20px 0;
+    }
+  }

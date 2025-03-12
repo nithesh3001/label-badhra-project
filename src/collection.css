@@ -1,0 +1,80 @@
+/* Festive Section Styles */
+.festive-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 100px 20px 100px;
+    background-color: #f8f8f8;
+}
+
+.festive-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.festive-card.reverse {
+    flex-direction: row-reverse;
+    /* Reverse layout for the second item */
+}
+
+.festive-image {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.festive-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.festive-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.festive-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.shop-button {
+    padding: 10px 20px;
+    background-color: #714384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.best{
+    text-align: center;
+    color: #714384;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .festive-section {
+        padding: 20px;
+    }
+
+    .festive-card {
+        flex-direction: column;
+    }
+
+    .festive-card.reverse {
+        flex-direction: column;
+        /* Ensure reverse layout doesn't break on mobile */
+    }
+
+    .festive-image {
+        width: 100%;
+        height: 200px;
+    }
+}
